@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,500;1,300;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: montserrat alternates;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#inicio{
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(imgen.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+
+#inicio .contenido header {
+    background-color:rgba(0, 0, 0, .8) ;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}  
+
+#inicio .contenido header .contenido-header{
+    max-width: 1100px;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+#inicio .contenido header .contenido-header h1{
+    text-align: center;
+    color: rgb(172, 92, 247);
+}
+
+#inicio .contenido header .contenido-header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#inicio .contenido header .contenido-header nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 0 12px;
+    font-weight: 400;
+    transition: .5s;
+}
+
+#inicio .contenido header .contenido-header nav ul li a:hover{
+    color: rgb(172, 99, 241);
+}
+
+#inicio .contenido header .contenido-header .redes a{
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 10px;
+    transition: .5s;
+    color: rgb(244, 241, 246);
+}
+
+#inicio .contenido header .contenido-header .redes a:hover{
+    color: rgb(172, 103, 189);
+}
+
+#inicio .contenido .presentacion{
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    columns: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#inicio .contenido .presentacion .bienvenida{
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    
+}
+
+#inicio .contenido .presentacion h2{
+    font-size: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+    
+    color: #fff;
+}
+
+#inicio .contenido .presentacion h2 span {
+    font-size: 30px;
+    color: rgb(210, 177, 240);
+    text-shadow: 3px 3px 1px rgb(0, 0, 0) ;
+    
+}
+#inicio .contenido .presentacion .descripcion{
+    max-width: 700px;
+    margin: 25px auto;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+}
+
+#inicio .contenido .presentacion a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px;
+    padding: 20px 25px;
+    border: 2px solid rgb(206, 176, 235);
+    border-radius: 50px;
+    color: #fff;
+    font-weight: lighter;
+    text-transform: inherit;
+    transition: .5s;
+}
+#inicio .contenido .presentacion a:hover{
+    background-color: rgb(172, 125, 216);
+}
+
+/* aca va el diseño de la seccion sobre mi valen */
+
+#sobremi{
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 15px;
+    color: black;
+    display: flex;
+
+}
+
+#sobremi .contenedor-foto{
+    max-width: 400px;
+    margin-right: 80px;
+
+}
+#sobremi .contenedor-foto img{
+    padding: 20px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgb(214, 189, 237);
+    overflow: hidden;
+
+    
+}
+
+#sobremi .sobremi h2{
+    font-size: 34px;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 4px;
+}
+
+#sobremi .sobremi h2 span{
+    color: rgb(202, 113, 212);
+}
+
+#sobremi .sobremi h3{
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+#sobremi .sobremi p{
+    font-size: 14px;
+    line-height: 25px;
+    color: #565656;
+    margin-bottom: 12px;
+
+}
+#sobremi .sobremi .titulo-seccion{
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #564259;
+    text-decoration: underline;
+    text-decoration-color: #cbb2cf;
+    text-decoration-thickness: 6px;
+}
+#sobremi .sobremi a{
+    display: inline-block;
+    text-decoration: none;
+    color: #564259;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: 1px solid #564259;
+    margin-top: 30px;
+    transition: .5s;
+    
+}
+
+#sobremi .sobremi a:hover{
+    background-color: #cbb2cf;
+    color: #fff;
+}
+
+/* aca estare colocando el estilo de la seccion de servicios  */
+
+#servicios{
+    padding: 100px 15px;
+    text-align: center;
+    background-color: #fef6ff;
+}
+
+#servicios .titulo-seccion{
+
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #564259;
+    text-decoration: underline;
+    text-decoration-color: #cbb2cf;
+    text-decoration-thickness: 5px;
+
+}
+
+#servicios .fila{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+
+#servicios .fila .servicio{
+    display: block;
+    max-width: 250px;
+    font-size: 80%;
+    background-color: #efd7f2;
+    padding: 30px;
+    margin: 0.5px;
+    border-radius: 5px;
+    transition: .5s;
+
+}
+
+
+#servicios .fila .servicio:hover{
+    box-shadow: 5px 5px 10px #564259, -5px -5px 10px #565656;
+}
+
+#servicios .fila .servicio h4 {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+#servicios .fila .servicio .icono{
+    display:  inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: #fef6ff;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+#servicios .fila .servicio hr{
+    width: 30px;
+    margin: auto;
+    color: #564259;
+    margin-bottom: 25px;
+
+}
+
+#servicios .fila .servicio ul{
+    list-style:none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+#servicios .fila .servicio p{
+    font-size: 14px;
+    line-height: 22px;
+}
+
+
+/* aca ira mi seccion de habilidades*/
+
+.contenedor-skills{
+    background: linear-gradient(rgb(0, 0, 0), rgba(80, 29, 89, 0.8)), url(fondoskills.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 100px 0;
+    text-align: center;
+    
+}
+
+.contenedor-skills h2{
+    color: #efd7f2;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: inherit;
+    
+}
+
+
+.contenedor-skills .skill {
+    max-width: 600px;
+    margin: 30px auto;
+    font-style: normal;
+    color: #fff;
+}
+
+.contenedor-skills .skill .info {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.contenedor-skills .skill .lista {
+    display: inline-block;
+    margin-right: 20px;
+    height: 10px;
+    width: 10px;
+    background-color: #884892;
+    
+}
+
+.contenedor-skills .skill .barra {
+    background-color: #6a4370;
+    width: 100%;
+    height: 6px;
+    margin: 10px 0;
+}
+
+
+.contenedor-skills .skill .barra .barra-progreso1{
+    background-color: #fef6ff;
+    width: 95%;
+    height: 6px;
+    animation: progreso1 2≤ forwards;
+}
+
+.contenedor-skills .skill .barra .barra-progreso2{
+    background-color: #fef6ff;
+    width: 90%;
+    height: 6px;
+    animation: progreso2 2≤ forwards;
+}
+
+.contenedor-skills .skill .barra .barra-progreso3{
+    background-color: #fef6ff;
+    width: 90%;
+    height: 6px;
+    animation: progreso3 2≤ forwards;
+}
+
+.contenedor-skills .skill .barra .barra-progreso4{
+    background-color: #fef6ff;
+    width: 85%;
+    height: 6px;
+    animation: progreso4 2≤ forwards;
+}
+
+@keyframes progreso1 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 95%;
+    }
+}
+
+@keyframes progreso2 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes progreso3 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes progreso4 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 85%;
+    }
+}
+
+
+#portafolio{
+    max-width: 1100px;
+    padding: 100px 0;
+    margin: 100px;
+}
+
+#portafolio .titulo-seccion{
+
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #564259;
+    text-decoration: underline;
+    text-decoration-color: #cbb2cf;
+    text-decoration-thickness: 5px;
+}
+
+#portafolio .fila{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+#portafolio .fila .proyecto{
+    max-width: 450px;
+    border: 1px solid rgb(174, 111, 174);
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+#portafolio .fila .proyecto img {
+    width: 100%;
+    height: 250px;
+    filter: grayscale(1);
+    object-fit: cover;
+    transition: .5s;
+}
+#portafolio .fila .proyecto:hover img {
+    filter: grayscale(0);
+}
+#portafolio .fila .proyecto .info {
+    position: absolute;
+    left: 0;
+    background-color: rgb(69, 6, 86);
+    color: hsl(300, 100%, 100%);
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+    bottom: -40px;
+    transition: .5s;
+}
+#portafolio .fila .proyecto:hover .info{
+    opacity: 1;
+    bottom: 0;
+}
+
+
+
+/*SECCION PARA CONTACTARME!!!!*/
+
+
+#contacto {
+    padding: 100px 15px;
+}
+
+#contacto .titulo-seccion {
+    margin-bottom: 20px;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #564259;
+    text-decoration: underline;
+    text-decoration-color: #976e9e;
+    text-decoration-thickness: 5px;
+    text-align: left;
+    margin-left: 310px;
+}
+
+#contacto .contenedor-form {
+    max-width: 1100px;
+    margin: 150px;
+}
+
+#contacto .contenedor-form .fila {
+    margin-bottom: 15px;
+}
+#contacto .contenedor-form .mitad{
+    display: flex;
+    justify-content: space-between;
+}
+#contacto .contenedor-form input,
+#contacto .contenedor-form textarea {
+    padding: 20px;
+    border-radius: 30px;
+    border: none;
+    border:2px solid #976e9e;
+}
+#contacto .contenedor-form .mitad input {
+    width: 48%;
+}
+#contacto .contenedor-form .input-full {
+    width: 100%;
+}
+#contacto .btn-enviar {
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: .5s;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+#contacto .btn-enviar:hover {
+    background-color: #884892;
+    color: #fbe0ff;
+}
+
+footer{
+    background-color: #564259;
+    color: #fef6ff;
+    text-align: center;
+    padding: 30px 0;
+    font-style: italic;
+}
+footer a{
+    text-decoration: none;
+    color: #fbe0ff;
+    display: inline-block;
+    margin: 5px;
+    font-size: 17px;
+}
+
+/*RESPONSIVE*/
+
+/*
+@media screen and (max-widht:800px) {
+    .redes{
+        display: none;
+    }
+    nav {
+        display: none;
+    }
+    nav.responsive {
+        display: block;
+        background-color: #564259;
+        width: 100%;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        padding: 10px 0;
+    }
+    nav.responsive ul{
+        display: block !important;
+        text-align: center;
+    }
+    nav.responsive ul li{
+        margin: 5px 0;
+    }
+    #icono-nav {
+        display: block;
+    }
+}
+
+#inicio .contenido .presentacion h2{
+    font-size: 40px;
+}
+
+#sobremi {
+    padding: 50px 0;
+    display: block;
+}
+
+#sobremi .contenedor-foto {
+    max-width: 200px;
+    margin: auto;
+}
+
+#sobremi .contenedor-foto img {
+    padding: 8px;
+}
+#sobremi .sobremi .titulo-seccion {
+    text-align: center;
+}
+
+#sobremi .sobremi h2 {
+    font-size: 25px;
+    text-align: center;
+}
+#servicios {
+    padding: 50px 15px;
+}
+#servicios .fila {
+    display: block;
+}
+
+#servicios .fila .servicio {
+    margin: 10px auto;
+}
+
+.contenedor-skills {
+    padding: 50px 20px;
+}
+
+#portafolio {
+    padding: 50px 0;
+}
+#portafolio .fila {
+    display: block;
+}
+#portafolio .fila .proyecto {
+    margin: 10px auto;
+}
+#contacto {
+    padding: 50px 15px;
+}
+#contacto .contenedor-form .mitad {
+    margin-bottom: 15px;
+    display: block;
+}
+#contacto .contenedor-form .mitad input{
+    width: 100%;
+    margin-bottom: 15px;
+}*/
